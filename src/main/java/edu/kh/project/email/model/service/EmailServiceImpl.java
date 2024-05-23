@@ -36,6 +36,7 @@ public class EmailServiceImpl implements EmailService {
 	
 	
 	// 이메일 보내기
+	@Transactional
 	@Override
 	public String sendEmail(String htmlName, String email) {
 		
